@@ -1,0 +1,28 @@
+  /* --- revisão de acertos e erros --- */
+  .review{width:100%; text-align:left; margin-top:18px;}
+  .rv-head{display:flex; align-items:center; justify-content:space-between; gap:10px; flex-wrap:wrap; margin-bottom:10px;}
+  .rv-title{margin:0; font-size:20px;}
+  .rv-actions .btn{width:auto;}
+  .rv-chips{display:flex; gap:8px; flex-wrap:wrap; margin-bottom:12px;}
+  .rv-chip{border:2px solid #DCD3FA; background:#fff; color:var(--purple-dark); border-radius:999px; padding:7px 13px; font-weight:800; font-size:13px; box-shadow:none;}
+  .rv-chip.active{background:var(--purple); border-color:var(--purple); color:#fff;}
+  .rv-list{display:flex; flex-direction:column; gap:8px;}
+  .rv-item{display:flex; align-items:center; gap:10px; padding:10px 12px; border-radius:16px; border:2px solid transparent;}
+  .rv-item.ok{background:#E9FAF2; border-color:#9BE3C1;}
+  .rv-item.bad{background:#FFF0F0; border-color:#FFB9B9;}
+  .rv-item.hide{display:none;}
+  .rv-num{width:28px; height:28px; border-radius:50%; background:#fff; font-family:'Baloo 2'; font-weight:800; font-size:14px; display:flex; align-items:center; justify-content:center; flex-shrink:0; color:var(--ink-soft);}
+  .rv-body{flex:1; min-width:0;}
+  .rv-q{font-family:'Baloo 2'; font-weight:700; font-size:16px; line-height:1.25; overflow-wrap:anywhere;}
+  .rv-vis{font-size:18px; letter-spacing:2px; line-height:1.3; overflow-wrap:anywhere;}
+  .rv-ans{display:flex; flex-wrap:wrap; gap:4px 14px; font-size:13px; font-weight:700; color:var(--ink-soft); margin-top:2px;}
+  .rv-ans b{color:var(--ink);}
+  .rv-item.bad .rv-mine b{color:var(--coral-dark);}
+  .rv-right b{color:var(--mint-dark);}
+  .rv-side{display:flex; flex-direction:column; align-items:center; gap:4px; flex-shrink:0;}
+  .rv-badge{font-size:20px; line-height:1;}
+  .rv-say{border:none; background:#fff; border-radius:50%; width:34px; height:34px; font-size:16px; box-shadow:0 2px 0 rgba(35,50,86,.15);}
+  .rv-say:active{transform:translateY(2px); box-shadow:none;}
+  .rv-empty{display:none; text-align:center; font-weight:800; color:var(--ink-soft); padding:14px;}
+  .rv-empty.show{display:block;}
+

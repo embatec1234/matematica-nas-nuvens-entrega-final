@@ -1,0 +1,14 @@
+  /* --- código secreto de figurinhas (proteção do perfil) --- */
+  .lock-card{max-width:380px;}
+  .lock-slots{display:flex; justify-content:center; gap:10px; margin:4px 0 6px;}
+  .lock-slot{width:62px; height:62px; border-radius:18px; border:3px dashed #C9BDF7; background:var(--lavender); display:flex; align-items:center; justify-content:center; font-size:34px;}
+  .lock-slot.filled{border-style:solid; border-color:var(--purple); background:#fff;}
+  .lock-slots.shake{animation:lockShake .4s;}
+  @keyframes lockShake{0%,100%{transform:translateX(0)} 20%{transform:translateX(-10px)} 40%{transform:translateX(10px)} 60%{transform:translateX(-6px)} 80%{transform:translateX(6px)}}
+  .lock-msg{min-height:22px; margin:2px 0 8px; font-weight:800; font-size:14px; color:var(--coral-dark);}
+  .lock-grid{display:grid; grid-template-columns:repeat(4,1fr); gap:8px; margin-bottom:12px;}
+  .lock-key{aspect-ratio:1; min-height:56px; border-radius:16px; border:3px solid transparent; background:var(--lavender); font-size:30px; cursor:pointer;}
+  .lock-key:hover{border-color:var(--purple);}
+  .lock-key:active{transform:scale(.92); background:#E4DBFF;}
+  .lock-actions{display:flex; justify-content:center; gap:10px;}
+  .lock-forgot{margin-top:12px; background:none; border:none; color:var(--ink-soft); font-weight:700; font-size:12px; text-decoration:underline; cursor:pointer;}

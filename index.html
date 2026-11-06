@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=no">
+<title>Matemática nas Nuvens</title>
+<!-- Ícone da aba do navegador (logo do jogo) -->
+<link rel="icon" type="image/svg+xml" href="img/logo.svg">
+<link rel="icon" type="image/png" sizes="32x32" href="img/icon-32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="img/icon-16.png">
+<link rel="shortcut icon" href="favicon.ico">
+<link rel="apple-touch-icon" href="img/icon-180.png">
+<meta name="theme-color" content="#5FB8FF">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;700;800&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+
+<!-- ESTILOS — a ORDEM IMPORTA (a cascata do CSS depende dela). Não reordene. -->
+<!-- Base -->
+<link rel="stylesheet" href="css/base/variables.css">
+<link rel="stylesheet" href="css/base/reset.css">
+<!-- Cenário: céu, espaço e animações -->
+<link rel="stylesheet" href="css/scenery/sky.css">
+<link rel="stylesheet" href="css/scenery/space.css">
+<link rel="stylesheet" href="css/scenery/animations.css">
+<!-- Layout e componentes gerais -->
+<link rel="stylesheet" href="css/layout/app-screen.css">
+<link rel="stylesheet" href="css/components/cards.css">
+<link rel="stylesheet" href="css/components/buttons.css">
+<link rel="stylesheet" href="css/layout/containers.css">
+<link rel="stylesheet" href="css/components/music-controls.css">
+<link rel="stylesheet" href="css/components/pill.css">
+<!-- Telas e componentes do jogo -->
+<link rel="stylesheet" href="css/screens/profile.css">
+<link rel="stylesheet" href="css/screens/players.css">
+<link rel="stylesheet" href="css/screens/difficulty.css">
+<link rel="stylesheet" href="css/screens/map.css">
+<link rel="stylesheet" href="css/screens/gameplay.css">
+<link rel="stylesheet" href="css/components/feedback-banner.css">
+<link rel="stylesheet" href="css/components/modal.css">
+<link rel="stylesheet" href="css/components/profile-lock.css">
+<link rel="stylesheet" href="css/components/mascot.css">
+<link rel="stylesheet" href="css/screens/tutorial.css">
+<link rel="stylesheet" href="css/components/stats.css">
+<link rel="stylesheet" href="css/screens/settings.css">
+<link rel="stylesheet" href="css/base/utilities.css">
+<link rel="stylesheet" href="css/components/small-ui.css">
+<link rel="stylesheet" href="css/components/narrator.css">
+<link rel="stylesheet" href="css/screens/start-dashboard.css">
+<link rel="stylesheet" href="css/screens/phase-review.css">
+<link rel="stylesheet" href="css/screens/voices.css">
+<link rel="stylesheet" href="css/screens/progress.css">
+<link rel="stylesheet" href="css/screens/evolution.css">
+<link rel="stylesheet" href="css/base/responsive.css">
+</head>
+<body>
+<div id="cloud-layer"></div>
+<div id="app"></div>
+<div id="modal-root"></div>
+<div id="feedback-root"></div>
+
+<!-- SCRIPTS — a ORDEM IMPORTA (um arquivo usa o que os anteriores definem). Não reordene.
+     Para criar um arquivo novo, adicione a linha dele no ponto certo desta lista. -->
+<!-- Configurações e dados fixos -->
+<script src="js/config/game-config.js"></script>
+<script src="js/config/narrator-voices.js"></script>
+<script src="js/config/music-tracks.js"></script>
+<script src="js/config/name-bank.js"></script>
+<!-- Núcleo: salvamento e utilitários -->
+<script src="js/core/names.js"></script>
+<script src="js/core/save.js"></script>
+<script src="js/core/profiles.js"></script>
+<script src="js/core/profile-lock.js"></script>
+<script src="js/core/utils.js"></script>
+<!-- Áudio: efeitos, música e narração -->
+<script src="js/audio/sfx.js"></script>
+<script src="js/audio/music.js"></script>
+<script src="js/audio/speech.js"></script>
+<!-- Cronômetro -->
+<script src="js/game/timer.js"></script>
+<!-- Geração de perguntas -->
+<script src="js/questions/common.js"></script>
+<script src="js/questions/phases-1-3.js"></script>
+<script src="js/questions/phase4-final-challenge.js"></script>
+<script src="js/questions/topic-activities.js"></script>
+<script src="js/questions/unique-sets.js"></script>
+<!-- Cenário e arte vetorial -->
+<script src="js/scenery/sky-art.js"></script>
+<script src="js/scenery/space-scene.js"></script>
+<script src="js/scenery/background-clouds.js"></script>
+<!-- Interface: modais e feedback -->
+<script src="js/ui/modal-feedback.js"></script>
+<!-- Navegação entre telas -->
+<script src="js/core/router.js"></script>
+<!-- Estatísticas, revisão e fala de fim de fase -->
+<script src="js/game/stats.js"></script>
+<script src="js/game/review.js"></script>
+<script src="js/game/end-speech.js"></script>
+<!-- Telas (SCREENS) -->
+<script src="js/core/screens-registry.js"></script>
+<script src="js/screens/start.js"></script>
+<script src="js/screens/profile.js"></script>
+<script src="js/screens/players.js"></script>
+<script src="js/screens/difficulty.js"></script>
+<script src="js/screens/tutorial.js"></script>
+<script src="js/screens/map/art.js"></script>
+<script src="js/screens/map/screen.js"></script>
+<script src="js/screens/activities.js"></script>
+<script src="js/screens/gameplay.js"></script>
+<script src="js/screens/pause.js"></script>
+<script src="js/screens/victory.js"></script>
+<script src="js/screens/defeat.js"></script>
+<script src="js/screens/final-result.js"></script>
+<script src="js/screens/settings.js"></script>
+<script src="js/screens/voices.js"></script>
+<script src="js/screens/progress/helpers.js"></script>
+<script src="js/screens/progress/evolution.js"></script>
+<script src="js/screens/progress/screen.js"></script>
+<script src="js/screens/multiplayer.js"></script>
+<!-- Inicialização (sempre por último) -->
+<script src="js/main.js"></script>
+</body>
+</html>

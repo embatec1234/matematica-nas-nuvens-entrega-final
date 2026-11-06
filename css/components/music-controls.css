@@ -1,0 +1,2 @@
+  .music-choice-row select{flex:1; min-width:0; padding:9px 10px; border:2px solid #E2E6F5; border-radius:10px; background:#F8F9FF; color:var(--ink); font:inherit; font-weight:700;}
+  .music-next{width:auto; min-height:40px; padding:8px 12px;}

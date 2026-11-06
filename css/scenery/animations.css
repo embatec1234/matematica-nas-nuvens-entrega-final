@@ -1,0 +1,23 @@
+  @keyframes sceneFade{from{opacity:0;} to{opacity:1;}}
+  @keyframes twinkle{from{opacity:.15; transform:scale(.7);} to{opacity:1; transform:scale(1.25);}}
+  @keyframes planetFloat{from{transform:translateY(-8px) rotate(-2deg);} to{transform:translateY(10px) rotate(2deg);}}
+  @keyframes rocketAcross{from{transform:translate(0,26px) rotate(-7deg);} to{transform:translate(150vw,-46px) rotate(-7deg);}}
+  @keyframes rocketBob{from{transform:scale(var(--scale,1)) translateY(-3px);} to{transform:scale(var(--scale,1)) translateY(4px);}}
+  @keyframes flameFlicker{from{transform:scale(.72,.88);} to{transform:scale(1.18,1.12);}}
+  @keyframes ufoAcross{from{transform:translateX(0);} to{transform:translateX(-150vw);}}
+  @keyframes ufoWobble{from{transform:translateY(-6px) rotate(-4deg);} to{transform:translateY(8px) rotate(4deg);}}
+  @keyframes ufoBlink{0%,100%{opacity:1;} 50%{opacity:.25;}}
+  @keyframes shoot{0%,68%{opacity:0; transform:translate(0,0) rotate(28deg);} 70%{opacity:1;} 82%,100%{opacity:0; transform:translate(-320px,170px) rotate(28deg);}}
+  @keyframes drift{from{transform:translateX(0);} to{transform:translateX(160vw);}}
+  @keyframes flyAcross{from{transform:translateX(0);} to{transform:translateX(150vw);}}
+  @keyframes planeBob{from{transform:scale(var(--scale,1)) translateY(-5px) rotate(-3.5deg);} to{transform:scale(var(--scale,1)) translateY(6px) rotate(2.5deg);}}
+  @keyframes birdAcross{0%{transform:translateX(0) translateY(12px) scaleX(1);} 25%{transform:translateX(32vw) translateY(-22px) scaleX(.93);} 50%{transform:translateX(68vw) translateY(8px) scaleX(1);} 75%{transform:translateX(100vw) translateY(-18px) scaleX(.93);} 100%{transform:translateX(140vw) translateY(10px) scaleX(1);}}
+  @keyframes wingFlap{0%{transform:rotate(-30deg) scaleY(.7);} 100%{transform:rotate(22deg) scaleY(1.08);}}
+  @keyframes birdBob{from{transform:scale(var(--scale,1)) translateY(4px) rotate(-4deg);} to{transform:scale(var(--scale,1)) translateY(-5px) rotate(4deg);}}
+  @keyframes starPass{from{transform:translateX(-12vw) translateY(18px) rotate(0deg);opacity:.2;} 45%{opacity:1;} to{transform:translateX(115vw) translateY(-18px) rotate(180deg);opacity:.75;}}
+  /* O céu permanece vivo em todas as telas, inclusive quando o dispositivo sinaliza redução de movimento. */
+  .bgcloud,.sky-plane,.sky-bird,.bird-wing,.plane-inner,.bird-inner,.space-star,.space-dot,.space-planet,.space-rocket,.rocket-inner,.rocket-flame,.space-ufo,.ufo-inner,.ufo-light,.shooting-star{animation-play-state:running!important;}
+  @media (max-width:560px){ .bgcloud{width:clamp(80px,26vw,150px);} .sky-plane{width:clamp(62px,17vw,100px);} .sky-bird{width:clamp(40px,11vw,64px);} .space-rocket{width:clamp(70px,20vw,110px);} .space-ufo{width:clamp(60px,16vw,95px);} }
+  @media (prefers-reduced-motion:reduce){
+    .bgcloud,.sky-plane,.sky-bird,.space-star,.space-rocket,.space-ufo{animation-duration:55s!important;}
+  }

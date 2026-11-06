@@ -1,0 +1,12 @@
+  /* --- narrador falando (personagem balança enquanto a voz toca) --- */
+  .listen-btn{display:flex;}
+  .stop-btn{display:none;}
+  body.narrator-talking .listen-btn{display:none;}
+  body.narrator-talking .stop-btn{display:flex;}
+  body.narrator-talking .mascot.live{animation:talk .38s ease-in-out infinite alternate;}
+  @keyframes talk{from{transform:translateY(0) rotate(-4deg) scale(1);} to{transform:translateY(-6px) rotate(4deg) scale(1.08);}}
+  @media (prefers-reduced-motion:reduce){ body.narrator-talking .mascot.live{animation:none;} }
+  .say-col{display:flex; flex-direction:column; gap:8px; flex-shrink:0;}
+  .mascot-row.narrator .mascot{font-size:48px;}
+  .mascot-row.narrator .speech{line-height:1.45;}
+

@@ -1,0 +1,9 @@
+  .center-emoji{font-size:64px; text-align:center;}
+  a.link-btn{color:var(--purple-dark); font-weight:800; text-decoration:underline;}
+  .sr-only{position:absolute; width:1px; height:1px; overflow:hidden; clip:rect(0,0,0,0);}
+  @media (max-width:420px){
+    .options-grid{grid-template-columns:1fr;}
+    .avatars{grid-template-columns:repeat(4,1fr);}
+  }
+  :focus-visible{outline:3px solid #2B3A55; outline-offset:2px;}
+

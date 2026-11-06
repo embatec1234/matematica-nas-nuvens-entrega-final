@@ -1,0 +1,19 @@
+  #cloud-layer{position:fixed; inset:0; pointer-events:none; z-index:0; overflow:hidden; transition:background .6s ease; opacity:1;}
+  #cloud-layer.sky-scene{background:linear-gradient(180deg,rgba(255,255,255,.08),transparent 48%);}
+  #cloud-layer.space-scene{background:
+      radial-gradient(ellipse at 18% 14%, rgba(140,111,247,.38) 0, transparent 46%),
+      radial-gradient(ellipse at 86% 82%, rgba(255,111,111,.24) 0, transparent 50%),
+      radial-gradient(circle at 50% 20%,#263b78 0%,#10152f 52%,#070916 100%);}
+  .bgcloud{position:absolute; left:-30%; width:clamp(90px,17vw,240px); aspect-ratio:200/104; filter:drop-shadow(0 8px 6px rgba(35,50,86,.14)); animation:drift linear infinite; will-change:transform;}
+  .bgcloud .art-svg{transform:scale(var(--scale,1)); transform-origin:center;}
+  /* ---------- AVIÃO E PÁSSARO (arte vetorial SVG) ---------- */
+  .art-svg{display:block; width:100%; height:100%; overflow:visible;}
+
+  .sky-plane{position:absolute; left:-24vw; width:clamp(70px,9.5vw,138px); aspect-ratio:220/142; animation:flyAcross linear infinite; will-change:transform; z-index:2; filter:drop-shadow(0 10px 8px rgba(30,60,100,.22));}
+  .plane-inner{width:100%; height:100%; transform:scale(var(--scale,1)); animation:planeBob 3.2s ease-in-out infinite alternate; will-change:transform;}
+
+  .sky-bird{position:absolute; left:-18vw; width:clamp(44px,6vw,86px); aspect-ratio:160/130; animation:birdAcross linear infinite; will-change:transform; z-index:2; filter:drop-shadow(0 8px 6px rgba(30,60,100,.2));}
+  .bird-inner{width:100%; height:100%; transform:scale(var(--scale,1)); animation:birdBob .8s ease-in-out infinite alternate; will-change:transform;}
+  .bird-wing{transform-box:fill-box; transform-origin:93% 72%; animation:wingFlap var(--flap,.4s) ease-in-out infinite alternate; will-change:transform;}
+  .bird-wing-far{animation-delay:-.13s; transform-origin:92% 70%;}
+

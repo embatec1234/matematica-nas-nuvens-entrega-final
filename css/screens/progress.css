@@ -1,0 +1,24 @@
+  /* --- tela "Meu progresso" --- */
+  .ph-list{display:flex; flex-direction:column; gap:10px;}
+  .ph-card{display:flex; align-items:center; gap:12px; padding:12px; border-radius:18px; background:var(--lavender); border:3px solid transparent;}
+  .ph-card.completed{background:#E9FAF2; border-color:#9BE3C1;}
+  .ph-card.unlocked{background:#FFF6D9; border-color:var(--sun);}
+  .ph-card.locked{background:#EEF0F8; opacity:.75;}
+  .ph-ico{font-size:32px; width:46px; text-align:center; flex-shrink:0;}
+  .ph-body{flex:1; min-width:0;}
+  .ph-title{font-family:'Baloo 2'; font-weight:800; font-size:17px; line-height:1.2;}
+  .ph-state{font-weight:800; font-size:13px; color:var(--ink-soft); display:flex; align-items:center; gap:8px; flex-wrap:wrap;}
+  .ph-detail{font-size:13px; font-weight:600; color:var(--ink-soft); margin-top:2px;}
+  .ph-detail b{color:var(--ink);}
+  .tp-list{display:flex; flex-direction:column; gap:10px;}
+  .tp-row{display:grid; grid-template-columns:minmax(110px,150px) 1fr 46px; align-items:center; gap:10px;}
+  .tp-name{font-weight:800; font-size:14px;}
+  .tp-bar{height:14px; background:#E2E6F5; border-radius:999px; overflow:hidden;}
+  .tp-fill{height:100%; border-radius:999px;}
+  .tp-fill.good{background:linear-gradient(90deg,var(--mint),#63E1A8);}
+  .tp-fill.mid{background:linear-gradient(90deg,var(--sun-dark),var(--sun));}
+  .tp-fill.low{background:linear-gradient(90deg,var(--coral-dark),var(--coral));}
+  .tp-val{font-weight:800; font-size:13px; color:var(--ink-soft); text-align:right;}
+  .tp-legend{display:flex; gap:14px; flex-wrap:wrap; margin-top:12px; font-size:12px; font-weight:700; color:var(--ink-soft);}
+  .tp-legend .lg{display:inline-block; width:10px; height:10px; border-radius:50%; margin-right:5px;}
+  .lg.good{background:var(--mint);} .lg.mid{background:var(--sun-dark);} .lg.low{background:var(--coral);}

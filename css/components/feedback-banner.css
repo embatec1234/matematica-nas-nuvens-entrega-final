@@ -1,0 +1,9 @@
+  .feedback-banner{
+    position:fixed; left:50%; top:18%; transform:translate(-50%,-20px); z-index:50;
+    background:#fff; padding:14px 26px; border-radius:20px; font-family:'Baloo 2'; font-weight:800; font-size:20px;
+    box-shadow:0 10px 30px rgba(0,0,0,0.25); opacity:0; pointer-events:none; transition:all .25s ease;
+    display:flex; align-items:center; gap:10px; max-width:90vw; text-align:center;
+  }
+  .feedback-banner.show{opacity:1; transform:translate(-50%,0);}
+  .feedback-banner.correct{color:var(--mint-dark); border:3px solid var(--mint);}
+  .feedback-banner.wrong{color:var(--coral-dark); border:3px solid var(--coral);}

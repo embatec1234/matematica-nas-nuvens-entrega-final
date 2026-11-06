@@ -1,0 +1,25 @@
+  /* --- painel da tela inicial --- */
+  .dash{display:flex; flex-direction:column; gap:14px;}
+  .dash-head{display:flex; align-items:center; gap:12px;}
+  .dash-avatar{font-size:38px; width:62px; height:62px; border-radius:50%; background:var(--lavender); display:flex; align-items:center; justify-content:center; flex-shrink:0; box-shadow:inset 0 -4px 0 rgba(140,111,247,.18);}
+  .dash-who{flex:1; min-width:0;}
+  .dash-name{font-family:'Baloo 2'; font-weight:800; font-size:22px; line-height:1.1; overflow:hidden; text-overflow:ellipsis; white-space:nowrap;}
+  .dash-rank{font-weight:800; color:var(--purple-dark); font-size:14px;}
+  .dash-jl{display:flex; justify-content:space-between; font-weight:800; font-size:13px; color:var(--ink-soft); margin-bottom:6px;}
+  .dash-jl b{color:var(--purple-dark);}
+  .phase-chips{display:flex; gap:8px; width:100%;}
+  .pchip{flex:1 1 0; min-width:0; border-radius:16px; padding:8px 4px; display:flex; flex-direction:column; align-items:center; gap:2px; background:var(--lavender); border:3px solid transparent; text-align:center;}
+  .pchip.done{background:#E9FAF2; border-color:#9BE3C1;}
+  .pchip.current{background:#FFF6D9; border-color:var(--sun);}
+  .pchip.locked{background:#EEF0F8; opacity:.75;}
+  .pc-ico{font-size:22px; line-height:1.1;}
+  .pc-lab{font-weight:800; font-size:11px; color:var(--ink-soft); white-space:nowrap;}
+  .pc-ok{font-size:13px; line-height:1.2;}
+  .pchip .stars .st{font-size:12px;}
+  .mini-stats{display:grid; grid-template-columns:repeat(3,1fr); gap:10px;}
+  .mini{background:var(--lavender); border-radius:16px; padding:10px 6px; text-align:center;}
+  .m-ico{font-size:18px; line-height:1;}
+  .m-num{font-family:'Baloo 2'; font-weight:800; font-size:22px; color:var(--purple-dark); line-height:1.2;}
+  .m-lab{font-size:11px; font-weight:800; color:var(--ink-soft); text-transform:uppercase;}
+  .dash-actions .btn{flex:1 1 130px; min-width:0;}
+

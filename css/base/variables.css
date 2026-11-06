@@ -1,0 +1,20 @@
+:root{
+    --sky-top:#5FB8FF;
+    --sky-mid:#8FD4FF;
+    --sky-bottom:#DFF6FF;
+    --sun:#FFD93D;
+    --sun-dark:#F5B700;
+    --coral:#FF6F6F;
+    --coral-dark:#E24B4B;
+    --mint:#3FCE8E;
+    --mint-dark:#25A96E;
+    --ink:#233256;
+    --ink-soft:#5A6A8C;
+    --cloud:#FFFFFF;
+    --lavender:#EFEBFF;
+    --purple:#8C6FF7;
+    --purple-dark:#6F4CDE;
+    --card-shadow: 0 10px 0 rgba(35,50,86,0.12), 0 18px 30px rgba(35,50,86,0.12);
+    --radius-lg: 28px;
+    --radius-md: 18px;
+  }

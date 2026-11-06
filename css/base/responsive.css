@@ -1,0 +1,7 @@
+  @media (max-width:420px){
+    .tp-row{grid-template-columns:1fr 46px; }
+    .tp-name{grid-column:1 / -1;}
+    .tp-bar{grid-column:1;}
+    .voice-grid{grid-template-columns:1fr 1fr;}
+    .pc-lab{font-size:10px;}
+  }

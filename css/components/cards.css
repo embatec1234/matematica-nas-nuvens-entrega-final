@@ -1,0 +1,7 @@
+  .cloud-card{
+    background:var(--cloud);
+    border-radius:var(--radius-lg);
+    box-shadow:var(--card-shadow);
+    padding:clamp(18px,4vw,32px);
+    width:100%;
+  }

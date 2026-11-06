@@ -1,0 +1,11 @@
+  .space-star{position:absolute; color:#fff8b8; font-size:clamp(18px,3vw,34px); opacity:.9; animation:starPass linear infinite; will-change:transform,opacity;}
+  /* ---------- CENÁRIO ESPACIAL (Desafio Bônus) ---------- */
+  .space-dot{position:absolute; background:#fff; border-radius:50%; box-shadow:0 0 6px 1px rgba(255,255,255,.7); animation:twinkle 3s ease-in-out infinite alternate;}
+  .space-planet{position:absolute; aspect-ratio:1/1; animation:planetFloat 10s ease-in-out infinite alternate; will-change:transform; filter:drop-shadow(0 0 14px rgba(160,140,255,.35));}
+  .space-rocket{position:absolute; left:-24vw; width:clamp(80px,11vw,150px); aspect-ratio:220/100; animation:rocketAcross linear infinite; will-change:transform; z-index:2; filter:drop-shadow(0 6px 10px rgba(0,0,0,.35));}
+  .rocket-inner{width:100%; height:100%; transform:scale(var(--scale,1)); animation:rocketBob 1.4s ease-in-out infinite alternate;}
+  .rocket-flame{transform-box:fill-box; transform-origin:100% 50%; animation:flameFlicker .16s ease-in-out infinite alternate;}
+  .space-ufo{position:absolute; right:-22vw; width:clamp(70px,9vw,125px); aspect-ratio:180/110; animation:ufoAcross linear infinite; will-change:transform; z-index:2; filter:drop-shadow(0 0 12px rgba(120,255,190,.45));}
+  .ufo-inner{width:100%; height:100%; animation:ufoWobble 1.8s ease-in-out infinite alternate;}
+  .ufo-light{animation:ufoBlink 1.5s ease-in-out infinite;}
+  .shooting-star{position:absolute; width:110px; height:2px; border-radius:2px; background:linear-gradient(90deg,rgba(255,255,255,0),#fff); transform:rotate(28deg); opacity:0; animation:shoot 8s linear infinite;}
